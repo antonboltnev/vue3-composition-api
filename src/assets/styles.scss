@@ -1,0 +1,79 @@
+@import "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #9a9a9a;
+  margin-top: 60px;
+}
+
+.layout {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.filters {
+  margin-bottom: $spacer*6;
+  h2 {
+    margin-bottom: $spacer*6;
+  }
+  &__select {
+    width: 100%;
+    padding: $spacer;
+    border-radius: $spacer/2;
+    border: solid 1px $border-color;
+  }
+  .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .input_wrapper {
+    text-align: left;
+    input {
+      outline: transparent;
+    }
+  }
+}
+
+.User {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacer*2;
+  margin-bottom: $spacer;
+  border-radius: $spacer/2;
+  border: solid 1px $border-color;
+  &__info {
+    flex-basis: 25%;
+    margin-right: $spacer*2;
+  }
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__item {
+    flex-basis: 25%;
+    margin-right: $spacer*2;
+  }
+}
+
+.add_user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $spacer*4 0;
+  &__input {
+    flex-basis: 25%;
+    margin-right: $spacer*2;
+  }
+}
